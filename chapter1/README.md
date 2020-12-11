@@ -73,7 +73,7 @@ Theater -> 관람객의 가방과 판매원의 매표소에 직접 접근.
 
 
 
-*Theater 는 TicketSeller의 **인터페이스(interface)**에만 의존.*
+*Theater 는 TicketSeller의 **인터페이스(interface)**에만 의존.
 
-*TicketSeller가 내부 TicketOffice 인터페이스를 포함하고 있다는 사실은 **구현(implementation)**의 영역에 속한다.*
+*TicketSeller가 내부 TicketOffice 인터페이스를 포함하고 있다는 사실은 **구현(implementation)**의 영역에 속한다.
 
