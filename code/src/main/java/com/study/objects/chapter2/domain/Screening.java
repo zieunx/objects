@@ -29,7 +29,11 @@ public class Screening {
         return new Reservation(customer, this, caluateFee(audienceCount), audienceCount);
     }
 
-    private Fee caluateFee(int audienceCount) {
+    private Money calculateFee(int audienceCount) {
         return movie.calculateMovieFee(this).times(audienceCount); // 1인당 예매 요금
+        /*
+        * Screening 이 Movie 에게 calculateMovieFee 를 호출한다.
+        * => Screening 이 Movie 의 calculateMovieFee 메세지를 전송한다.
+        * */
     }
 }
