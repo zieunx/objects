@@ -13,7 +13,7 @@ public class Screening {
         this.whenScreened = whenScreened;
     }
 
-    public LocalDateTime getWhenScreened() {
+    public LocalDateTime getStartTime() {
         return whenScreened;
     }
 
@@ -21,12 +21,12 @@ public class Screening {
         return this.sequence == sequence;
     }
 
-    public int getMovieFee() {
+    public Money getMovieFee() {
         return movie.getFee();
     }
 
-    public Resrvation resrve(Customer customer, int audienceCount) {
-        return new Reservation(customer, this, caluateFee(audienceCount), audienceCount);
+    public Reservation resrve(Customer customer, int audienceCount) {
+        return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
     }
 
     private Money calculateFee(int audienceCount) {
