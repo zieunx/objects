@@ -1,7 +1,10 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.discount.impl;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
+
+import com.study.objects.chapter2.domain.movie.Screening;
+import com.study.objects.chapter2.domain.discount.DiscountCondition;
 
 public class PeriodCondition implements DiscountCondition {
 	private DayOfWeek dayOfWeek;

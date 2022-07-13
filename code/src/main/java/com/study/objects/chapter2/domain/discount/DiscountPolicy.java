@@ -1,8 +1,11 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.discount;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.movie.Screening;
 
 public abstract class DiscountPolicy {
 	private List<DiscountCondition> contitions = new ArrayList<>();
