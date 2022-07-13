@@ -1,4 +1,7 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.discount.impl;
+
+import com.study.objects.chapter2.domain.movie.Screening;
+import com.study.objects.chapter2.domain.discount.DiscountCondition;
 
 public class SequenceCondition implements DiscountCondition {
 

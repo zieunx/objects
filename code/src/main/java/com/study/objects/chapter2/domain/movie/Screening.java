@@ -1,6 +1,9 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.movie;
 
 import java.time.LocalDateTime;
+
+import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.reservation.Reservation;
 
 public class Screening {
     private Movie movie;

@@ -4,12 +4,12 @@ import java.time.DayOfWeek;
 import java.time.Duration;
 import java.time.LocalTime;
 
-import com.study.objects.chapter2.domain.AmountDiscountPolicy;
-import com.study.objects.chapter2.domain.Money;
-import com.study.objects.chapter2.domain.Movie;
-import com.study.objects.chapter2.domain.PercentDiscountPolicy;
-import com.study.objects.chapter2.domain.PeriodCondition;
-import com.study.objects.chapter2.domain.SequenceCondition;
+import com.study.objects.chapter2.domain.discount.impl.AmountDiscountPolicy;
+import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.movie.Movie;
+import com.study.objects.chapter2.domain.discount.impl.PercentDiscountPolicy;
+import com.study.objects.chapter2.domain.discount.impl.PeriodCondition;
+import com.study.objects.chapter2.domain.discount.impl.SequenceCondition;
 
 /**
  * 영화 '아바타'와 '타이타닉'을 할인정책과 조건에 맞춰 생성.

@@ -1,6 +1,9 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.movie;
 
 import java.time.Duration;
+
+import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.discount.DiscountPolicy;
 
 public class Movie {
     private String title;
@@ -20,10 +23,6 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening) {
-        // 할인 정책이 없는 경우를 예외처리 -> 일관성있던 협력 방식이 무너진다.
-        if (discountPolicy == null) {
-            return fee;
-        }
         return fee.minus(discountPolicy.calculateDiscountAmount(screening));
     }
 }

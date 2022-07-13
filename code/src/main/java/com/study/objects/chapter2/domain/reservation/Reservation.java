@@ -1,4 +1,7 @@
-package com.study.objects.chapter2.domain;
+package com.study.objects.chapter2.domain.reservation;
+
+import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.movie.Screening;
 
 public class Reservation {
 	private Customer customer;
