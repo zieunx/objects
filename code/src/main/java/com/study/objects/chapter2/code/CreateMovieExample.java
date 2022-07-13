@@ -6,6 +6,7 @@ import java.time.LocalTime;
 
 import com.study.objects.chapter2.domain.discount.impl.AmountDiscountPolicy;
 import com.study.objects.chapter2.domain.common.Money;
+import com.study.objects.chapter2.domain.discount.impl.NoneDiscountPolicy;
 import com.study.objects.chapter2.domain.movie.Movie;
 import com.study.objects.chapter2.domain.discount.impl.PercentDiscountPolicy;
 import com.study.objects.chapter2.domain.discount.impl.PeriodCondition;
@@ -44,5 +45,9 @@ public class CreateMovieExample {
 				new SequenceCondition(2),
 				new PeriodCondition(DayOfWeek.THURSDAY, LocalTime.of(10, 0), LocalTime.of(13, 59))));
 
+		Movie starWars = new Movie("스타워즈",
+			Duration.ofMinutes(210),
+			Money.wons(10000),
+			new NoneDiscountPolicy());
 	}
 }
